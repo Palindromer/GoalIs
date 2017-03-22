@@ -1,10 +1,10 @@
-package DAO.ConcreteDbDaoFactory;
+package main.DAO.ConcreteDbDaoFactory;
 
 
-import DAO.DaoEntities.MySql.*;
-import DAO.DaoFactory;
-import DAO.DaoEntities.IGoalDao;
-import DAO.DaoEntities.IUserDao;
+import main.DAO.DaoEntities.MySql.*;
+import main.DAO.DaoFactory;
+import main.DAO.DaoEntities.IGoalDao;
+import main.DAO.DaoEntities.IUserDao;
 
 public class MySqlDaoFactory extends DaoFactory {
     @Override

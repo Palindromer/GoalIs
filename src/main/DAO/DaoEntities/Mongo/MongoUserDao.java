@@ -1,13 +1,15 @@
-package DAO.DaoEntities.MySql;
+package main.DAO.DaoEntities.Mongo;
 
 
-import DAO.DaoEntities.IUserDao;
-import Entities.User;
+import main.DAO.DaoEntities.IUserDao;
+import main.Entities.User;
 
 import java.util.List;
 import java.util.UUID;
 
-public class MySqlUserDao  implements IUserDao {
+
+public class MongoUserDao  implements IUserDao {
+
     @Override
     public User find(UUID id) {
         return null;

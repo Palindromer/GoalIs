@@ -1,10 +1,10 @@
-package DAO.ConcreteDbDaoFactory;
+package main.DAO.ConcreteDbDaoFactory;
 
 
-import DAO.DaoEntities.IGoalDao;
-import DAO.DaoEntities.IUserDao;
-import DAO.DaoEntities.Mongo.*;
-import DAO.DaoFactory;
+import main.DAO.DaoEntities.IGoalDao;
+import main.DAO.DaoEntities.IUserDao;
+import main.DAO.DaoEntities.Mongo.*;
+import main.DAO.DaoFactory;
 
 public class MongoDaoFactory extends DaoFactory {
     @Override

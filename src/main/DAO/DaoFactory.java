@@ -1,8 +1,8 @@
-package DAO;
+package main.DAO;
 
-import DAO.ConcreteDbDaoFactory.*;
-import DAO.DaoEntities.IGoalDao;
-import DAO.DaoEntities.IUserDao;
+import main.DAO.ConcreteDbDaoFactory.*;
+import main.DAO.DaoEntities.IGoalDao;
+import main.DAO.DaoEntities.IUserDao;
 
 public abstract class DaoFactory {
 

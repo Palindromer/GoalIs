@@ -1,32 +1,31 @@
-package DAO.DaoEntities.Mongo;
+package main.DAO.DaoEntities.MySql;
 
 
-import DAO.DaoEntities.IUserDao;
-import Entities.User;
+import main.DAO.DaoEntities.IGoalDao;
+import main.Entities.Goal;
 
 import java.util.List;
 import java.util.UUID;
 
-
-public class MongoUserDao  implements IUserDao {
+public class MySqlGoalDao implements IGoalDao {
 
     @Override
-    public User find(UUID id) {
+    public Goal find(UUID id) {
         return null;
     }
 
     @Override
-    public List<User> findAll() {
+    public List<Goal> findAll() {
         return null;
     }
 
     @Override
-    public boolean add(User object) {
+    public boolean add(Goal object) {
         return false;
     }
 
     @Override
-    public boolean update(User object) {
+    public boolean update(Goal object) {
         return false;
     }
 
