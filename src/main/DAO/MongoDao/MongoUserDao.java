@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 
-public class MongoUserDao  implements IUserDao {
+public class MongoUserDao extends AbstractMongoDao<User>  implements IUserDao {
 
     @Override
     public User find(UUID id) {

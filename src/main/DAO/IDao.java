@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.UUID;
 
 public interface IDao<T> {
-
     T find(UUID id);
 
     List<T> findAll();

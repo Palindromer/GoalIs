@@ -3,11 +3,10 @@ package main.DAO.MongoDao;
 
 import main.DAO.IGoalDao;
 import main.Entities.Goal;
-
 import java.util.List;
 import java.util.UUID;
 
-public class MongoGoalDao implements IGoalDao {
+public class MongoGoalDao extends AbstractMongoDao<Goal> implements IGoalDao {
 
     @Override
     public Goal find(UUID id) {

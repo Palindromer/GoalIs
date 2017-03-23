@@ -3,8 +3,6 @@ package main.DAO.DbDaoFactory;
 
 import main.DAO.IGoalDao;
 import main.DAO.IUserDao;
-import main.DAO.MySqlDao.MySqlGoalDao;
-import main.DAO.MySqlDao.MySqlUserDao;
 
 class MySqlDaoFactory extends DaoFactory {
 

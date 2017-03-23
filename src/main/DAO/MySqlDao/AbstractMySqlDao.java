@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-abstract class AbstractMySqlDao<T> implements IDao<T> {
+public abstract class AbstractMySqlDao<T> implements IDao<T> {
 
     private static final String DATABASE_URL =
             "jdbc:mysql://localhost:3306/goalin?useLegacyDatetimeCode=false&serverTimezone=UTC";
@@ -17,8 +17,8 @@ abstract class AbstractMySqlDao<T> implements IDao<T> {
 
     protected String TABLE_NAME;
 
-    protected AbstractMySqlDao(String tableName) {
-        TABLE_NAME = tableName;
+    protected AbstractMySqlDao() {
+
     }
 
     protected Connection getConnection() throws SQLException {
@@ -38,7 +38,7 @@ abstract class AbstractMySqlDao<T> implements IDao<T> {
 
         try (Connection connection = getConnection()) {
 
-            String sql = "SELECT * FROM " + TABLE_NAME + " WHERE id = ?";
+            String sql = "SELECT * FROM " + getTableName() + " WHERE id = ?";
 
             try (PreparedStatement statement =
                          connection.prepareStatement(sql)) {
@@ -65,7 +65,7 @@ abstract class AbstractMySqlDao<T> implements IDao<T> {
 
         try (Connection connection = getConnection()) {
 
-            String sql = "SELECT * FROM " + TABLE_NAME;
+            String sql = "SELECT * FROM " + getTableName();
 
             try (PreparedStatement statement
                          = connection.prepareStatement(sql)) {
@@ -90,7 +90,7 @@ abstract class AbstractMySqlDao<T> implements IDao<T> {
         boolean result = false;
         try (Connection connection = getConnection()) {
 
-            String sql = "DELETE FROM " + TABLE_NAME + " WHERE id = ?";
+            String sql = "DELETE FROM " + getTableName() + " WHERE id = ?";
 
             try (PreparedStatement statement =
                          connection.prepareStatement(sql)) {
@@ -110,4 +110,6 @@ abstract class AbstractMySqlDao<T> implements IDao<T> {
 
     protected abstract T getObjectFromResult(ResultSet resultSet)
             throws SQLException;
+
+    protected abstract String getTableName();
 }

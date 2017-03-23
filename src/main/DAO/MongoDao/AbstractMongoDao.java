@@ -1,5 +1,7 @@
 package main.DAO.MongoDao;
 
-public class AbstractMongoDao {
+import main.DAO.IDao;
+
+public abstract class AbstractMongoDao<T> implements IDao<T> {
 
 }
