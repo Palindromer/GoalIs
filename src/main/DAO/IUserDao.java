@@ -1,6 +1,5 @@
-package main.DAO.DaoEntities;
+package main.DAO;
 
-import main.DAO.IDao;
 import main.Entities.User;
 
 public interface IUserDao  extends IDao<User> {

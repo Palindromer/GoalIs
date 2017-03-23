@@ -1,13 +1,19 @@
 package tests.DAO.DaoEntities.Mongo;
 
-import org.junit.*;
+import main.DAO.DbDaoFactory.DaoFactory;
+import org.junit.Test;
+
+import java.util.UUID;
 
 
 public class MongoGoalDaoTest {
 
     @Test
     public void find() throws Exception {
+        DaoFactory mongoFactory = DaoFactory.getDefaultDaoFactory();
 
+        UUID goalUuid = null;
+        mongoFactory.getGoalDao().find(goalUuid);
     }
 
     @Test

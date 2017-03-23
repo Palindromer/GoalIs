@@ -1,8 +1,7 @@
-package main.DAO;
+package main.DAO.DbDaoFactory;
 
-import main.DAO.ConcreteDbDaoFactory.*;
-import main.DAO.DaoEntities.IGoalDao;
-import main.DAO.DaoEntities.IUserDao;
+import main.DAO.IGoalDao;
+import main.DAO.IUserDao;
 
 public abstract class DaoFactory {
 
@@ -11,9 +10,15 @@ public abstract class DaoFactory {
     public abstract IGoalDao getGoalDao();
 
 
-    enum DbFactory { MySql, Mongo}
 
-    public static DaoFactory getDAOFactory(
+    public static DaoFactory getDefaultDaoFactory()
+    {
+        return getDAOFactory(DbFactory.MySql);
+    }
+
+    private enum DbFactory { MySql, Mongo}
+
+    private static DaoFactory getDAOFactory(
             DbFactory dbFactory) {
 
         switch (dbFactory) {
