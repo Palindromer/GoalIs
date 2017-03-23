@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85008f3d-34d7-4332-9040-a23a00bf77ad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/DAO/MySqlDao/MySqlGoalDao.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/DAO/DaoEntities/MySql/MySqlGoalDao.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoalIn.iml" afterPath="$PROJECT_DIR$/GoalIn.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/DAO/DaoEntities/Mongo/MongoGoalDaoTest.java" afterPath="$PROJECT_DIR$/src/tests/DAO/DaoEntities/Mongo/MongoGoalDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/DAO/DaoEntities/MySql/MySqlGoalDaoTest.java" afterPath="$PROJECT_DIR$/src/tests/DAO/DaoEntities/MySql/MySqlGoalDaoTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/DAO/ConcreteDbDaoFactory/MongoDaoFactory.java" afterPath="$PROJECT_DIR$/src/main/DAO/DbDaoFactory/MongoDaoFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/DAO/ConcreteDbDaoFactory/MySqlDaoFactory.java" afterPath="$PROJECT_DIR$/src/main/DAO/DbDaoFactory/MySqlDaoFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/DAO/DaoEntities/IGoalDao.java" afterPath="$PROJECT_DIR$/src/main/DAO/IGoalDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/DAO/DaoEntities/IUserDao.java" afterPath="$PROJECT_DIR$/src/main/DAO/IUserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/DAO/DaoEntities/Mongo/MongoGoalDao.java" afterPath="$PROJECT_DIR$/src/main/DAO/MongoDao/MongoGoalDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/DAO/DaoEntities/Mongo/MongoUserDao.java" afterPath="$PROJECT_DIR$/src/main/DAO/MongoDao/MongoUserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/DAO/DaoEntities/MySql/MySqlUserDao.java" afterPath="$PROJECT_DIR$/src/main/DAO/MySqlDao/MySqlUserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/DAO/DaoFactory.java" afterPath="$PROJECT_DIR$/src/main/DAO/DbDaoFactory/DaoFactory.java" />
     </list>
     <ignored path="GoalIn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,24 +96,12 @@
       <file leaf-file-name="AbstractMySqlDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/DAO/MySqlDao/AbstractMySqlDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+            <state relative-caret-position="896">
+              <caret line="111" column="32" lean-forward="true" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#556#557#0" expanded="true" />
                 <element signature="e#594#595#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MySqlGoalDaoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tests/DAO/DaoEntities/MySql/MySqlGoalDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1198,16 +1172,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/DAO/DaoEntities/MySql/MySqlGoalDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/DAO/IGoalDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1234,10 +1198,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/DAO/DaoEntities/MySql/MySqlGoalDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/DAO/MySqlDao/AbstractMySqlDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        <state relative-caret-position="896">
+          <caret line="111" column="32" lean-forward="true" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#556#557#0" expanded="true" />
